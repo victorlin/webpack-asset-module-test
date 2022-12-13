@@ -4,7 +4,7 @@
   "description": "",
   "main": "example.js",
   "scripts": {
-    "build": "webpack build",
+    "build": "rm -rf dist/ && webpack build",
     "start": "node server.js"
   },
   "author": "",

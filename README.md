@@ -18,14 +18,15 @@ npm run build
 Current output:
 
 ```
-assets by status 78 KiB [cached] 1 asset
-asset bundle.js 1.07 KiB [emitted] [minimized] (name: main)
-asset index.html 216 bytes [compared for emit]
-runtime modules 1.45 KiB 4 modules
-cacheable modules 471 bytes (javascript) 156 KiB (asset)
-  javascript modules 387 bytes
+asset ca02a55e3febcf6cb01e.png 78 KiB [emitted] [immutable] [from: extensionDir/require.png] (auxiliary name: main)
+asset bundle.js 1.65 KiB [emitted] [minimized] (name: main)
+asset index.html 216 bytes [emitted]
+runtime modules 1.72 KiB 5 modules
+built modules 659 bytes (javascript) 156 KiB (asset) [built]
+  javascript modules 575 bytes
     ./index.js 255 bytes [built] [code generated]
-    ./extensionDir/extension.js + 1 modules 132 bytes [built] [code generated]
+    ./extensionDir/ sync ^\.\/.*$ 230 bytes [built] [code generated]
+    ./extensionDir/extension.js 90 bytes [optional] [built] [code generated]
   asset modules 84 bytes (javascript) 156 KiB (asset)
     ./extensionDir/require.png 42 bytes (javascript) 78 KiB (asset) [built] [code generated]
     ./extensionDir/import.png 42 bytes (javascript) 78 KiB (asset) [built] [code generated]
