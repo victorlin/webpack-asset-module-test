@@ -1,9 +1,9 @@
-const x = require("./circular-tree.png");
+const x = require(`@extensions/extension.js`).default; // eslint-disable-line
 
 function component() {
   const element = document.createElement('div');
 
-  element.innerHTML = `hello ${x}`;
+  element.innerHTML = `Hello ${x}`;
 
   return element;
 }

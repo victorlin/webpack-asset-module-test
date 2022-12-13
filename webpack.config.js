@@ -12,6 +12,14 @@ module.exports = {
       { test: /\.png$/, type: 'asset/resource' },
     ],
   },
+  resolve: {
+    alias: {
+      "@extensions": path.resolve(__dirname, 'extensionDir')
+    },
+    fallback: {
+      fs: false
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin()
   ]
