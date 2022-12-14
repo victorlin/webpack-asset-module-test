@@ -1,5 +1,7 @@
+const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   entry: './index.js',
@@ -21,6 +23,9 @@ module.exports = {
     }
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin(),
+    new webpack.DefinePlugin({
+      "EXTENSION_DATA": JSON.stringify(JSON.parse(fs.readFileSync('extensionDir/config.json', { encoding: 'utf8' })))
+    }),
   ]
 };

@@ -1,10 +1,9 @@
+import NavBar from "./components/navbar";
+
 function component() {
   const element = document.createElement('div');
 
-  element.innerHTML = `Hello ${x}`;
-
-  const file = "extension.js";
-  const x = require(`@extensions/${file}`).default;
+  element.innerHTML = `Hello ${NavBar}`;
 
   return element;
 }
